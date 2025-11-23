@@ -9,6 +9,7 @@ import HoTroNoXau from "./pages/HoTroNoXau.tsx";
 import VayTienOnline from "./pages/VayTienOnline.tsx";
 import Blog from "./pages/Blog.tsx";
 import CongTy from "./pages/CongTy.tsx";
+import Registration from "./pages/Registration.tsx";
 import "./globals.css";
 const setupRouteChangeBridge = () => {
   if (typeof window === "undefined") {
@@ -64,6 +65,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/vay-tien-online" element={<VayTienOnline />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/cong-ty" element={<CongTy />} />
+        <Route path="/registration" element={<Registration />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
